@@ -65,8 +65,7 @@ This package contains a small demo application to show Granite Widgets.
 make %{?_smp_mflags} VERBOSE=1
 
 %install
-rm -rf $RPM_BUILD_ROOT
-make install DESTDIR=$RPM_BUILD_ROOT
+%make_install
 
 %find_lang %{name}
 
