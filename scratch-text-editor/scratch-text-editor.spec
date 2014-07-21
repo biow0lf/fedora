@@ -2,7 +2,7 @@
 
 Name: scratch-text-editor
 Version: 2.0.2
-Release: 1%{?dist}
+Release: 2%{?dist}
 
 Summary: The text editor that works
 License: GPLv3
@@ -26,6 +26,8 @@ BuildRequires: libsoup-devel
 BuildRequires: vte3-devel
 BuildRequires: webkitgtk3-devel
 BuildRequires: gtkspell3-devel
+
+Requires: zeitgeist
 
 %description
 Scratch is the text editor that works for you. It auto-saves your files,
@@ -109,5 +111,8 @@ mv %{buildroot}/usr/lib/* %{buildroot}%{_libdir}/
 %{_datadir}/vala/vapi/scratchcore.vapi
 
 %changelog
+* Mon Jul 21 2014 Igor Zubkov <igor.zubkov@gmail.com> - 2.0.2-2
+- Add zeitgeist to requires
+
 * Mon Mar 31 2014 Igor Zubkov <igor.zubkov@gmail.com> - 2.0.2-1
 - 2.0.2
