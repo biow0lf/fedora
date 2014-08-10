@@ -5,7 +5,7 @@ Release: 1%{?dist}
 Summary: A tool for analyzing changes in Linux distributions
 License: GPLv2
 Group: Development/Tools
-Url: http://lvc.github.io/dist1diff/
+Url: http://lvc.github.io/distdiff/
 
 Source0: %{name}-%{version}.tar.gz
 
