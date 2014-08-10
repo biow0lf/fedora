@@ -9,6 +9,8 @@ Url: https://github.com/lvc/vtable-dumper
 
 Source0: %{name}-%{version}.tar.gz
 
+BuildRequires: elfutils-libelf-devel
+
 %description
 Vtable-Dumper - a tool to list content of virtual tables in a C++ shared library
 
@@ -30,5 +32,5 @@ make install prefix=%{buildroot}%{_prefix}
 %{_bindir}/vtable-dumper
 
 %changelog
-* Fri Dec 20 2013 Igor Zubkov <izubkov@cloudlinux.com> 1.0-1
-- init
+* Sun Aug 10 2014 Igor Zubkov <igor.zubkov@gmail.com> 1.0-1
+- 1.0
